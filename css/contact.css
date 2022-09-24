@@ -46,11 +46,16 @@ a{
 body{
     background-color: #b9a7a2;
 }
+
 .header{
-    width: 50%;
-    margin: 5vh auto 10vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
     text-align: center;
+    font-size: 2vw;
+    color: #F9F1F0;
+    background : linear-gradient(#706764 , #b9a7a2);
 }
+
 form{
     width: 25%;
     display: flex;
@@ -63,7 +68,7 @@ form{
 }
 .group-name{
     display: flex;
-    gap: 28%;
+    gap: 10vw;
 }
 .input-group{
     display: flex;
@@ -89,4 +94,16 @@ form > button {
     width: 60%;
     margin: 0 auto;
     border-radius: 10px;
+}
+@media (max-width: 1648px) {
+    .group-name{
+        gap : 5vw;
+    }
+}
+
+@media (max-width: 1311px) {
+    .group-name{
+        flex-direction: column;
+        gap: 1vh;
+    }
 }
