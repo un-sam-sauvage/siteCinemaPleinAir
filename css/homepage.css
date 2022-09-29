@@ -110,7 +110,7 @@ a{
     align-items: center;
     font-size: 2.5vw;
 }
-.left > .btn > .bg {
+.left > .btn > a {
     position: relative;
     z-index: 1;
     background-color : #B9B7BD;
@@ -126,7 +126,7 @@ a{
     position: relative;
 }
 
-.left > .btn > .bg::before {
+.left > .btn > a::before {
     content: "";
     position: absolute;
     border-radius: 10px;
@@ -140,7 +140,7 @@ a{
     background-color: #868b8e5d;
 }
 
-.left > .btn > .bg:hover::before {
+.left > .btn > a:hover::before {
     transform: scaleY(1);
 }
 .left > .btn > a {
@@ -263,4 +263,75 @@ a{
     padding: 2%;
     border-radius: 20px;
     margin-top: 2%;
+}
+@media (max-width: 1200px) {
+    .content{
+        flex-direction: column;
+    }
+    .scenes{
+        gap: 4vw;
+        font-size: 2vw;
+    }
+    .film{
+        gap: .5vw;
+    }
+    .scenes > .scene{
+        gap: 15vw;
+    }
+    .right{
+        margin-bottom: 10% ;
+        left: 0;
+        top: 8vh;
+        width: 100%;
+    }
+    .preinscription{
+        width: 50%;
+        margin: 2% auto;
+        position:static;
+        padding: 2%;
+        font-size: 2vw;
+    }
+    .preinscription > form > input , .preinscription > form > button{
+        font-size: 2vw;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .presentation {
+        font-size: 2vw;
+        width: 80%;
+    }
+    .presentation .google {
+        width: 90%;
+    }
+    .presentation > .google > iframe{
+        width: 100%;
+    }
+    .actualites > h2 {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 2%;
+        font-size: 4vw;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    .cards > .card{
+        width: 80%;
+    }
+    .cards > .card > img{
+        width: 70%;
+    }
+    .cards > .card > .text {
+        font-size: 2vw;
+    }
+    .cards > .card > .link{
+        font-size: 2.5vw;
+    }
+    .left > .btn > a {
+        font-size: 5vw;
+    }
 }
